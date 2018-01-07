@@ -1,0 +1,11 @@
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\bin\Debug\netcoreapp2.0\IdentityTask.deps.json
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\bin\Debug\netcoreapp2.0\IdentityTask.runtimeconfig.json
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\bin\Debug\netcoreapp2.0\IdentityTask.runtimeconfig.dev.json
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\bin\Debug\netcoreapp2.0\IdentityTask.dll
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\bin\Debug\netcoreapp2.0\IdentityTask.pdb
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\obj\Debug\netcoreapp2.0\IdentityTask.csprojResolveAssemblyReference.cache
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\obj\Debug\netcoreapp2.0\IdentityTask.csproj.CoreCompileInputs.cache
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\obj\Debug\netcoreapp2.0\IdentityTask.AssemblyInfoInputs.cache
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\obj\Debug\netcoreapp2.0\IdentityTask.AssemblyInfo.cs
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\obj\Debug\netcoreapp2.0\IdentityTask.dll
+C:\Users\Serhii Dmytrenko\Desktop\folder\IdentityTask\IdentityTask\obj\Debug\netcoreapp2.0\IdentityTask.pdb
