@@ -23,7 +23,6 @@ var startLoad = function () {
         url: '/api/info',
         beforeSend: function (xhr) {
             //var token = sessionStorage.getItem(tokenKey);
-            console.log(token);
             xhr.setRequestHeader("Authorization", "Bearer " + token);
         },
         success: function (data) {
@@ -57,8 +56,6 @@ $('#submitLogin').click(function (e) {
     }).success(function (data) {
         sessionStorage.setItem(tokenKey, data.access_token);
         startLoad();
-
-        console.log(data);
     }).fail(function (data) {
         console.log("fail");
     });
