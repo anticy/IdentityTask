@@ -2178,3 +2178,141 @@ Request starting HTTP/1.1 GET http://localhost:58914/api/values
 Request finished in 387.2144ms 404 
 Request starting HTTP/1.1 GET http://localhost:58914/favicon.ico  
 Request finished in 5.4862ms 404 
+Request starting HTTP/1.1 GET http://localhost:58914/api/values  
+Request finished in 376.1067ms 404 
+Request starting HTTP/1.1 GET http://localhost:58914/favicon.ico  
+Request finished in 85.6888ms 404 
+Request starting HTTP/1.1 GET http://localhost:58914/index.html  
+The file /index.html was not modified
+Request finished in 106.7185ms 304 text/html
+Request starting HTTP/1.1 GET http://localhost:58914/Scripts/user.js  
+The file /Scripts/user.js was not modified
+Request finished in 11.0147ms 304 application/javascript
+Request starting HTTP/1.1 POST http://localhost:58914/api/account/token application/x-www-form-urlencoded; charset=UTF-8 68
+Executing action method IdentityTask.Controllers.AccountController.Token (IdentityTask) with arguments (IdentityTask.Models.LoginModel) - ModelState is Valid
+Entity Framework Core 2.0.1-rtm-125 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (131ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Age], [u].[ConcurrencyStamp], [u].[Country], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+Executed DbCommand (165ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Age], [u].[ConcurrencyStamp], [u].[Country], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+Executed DbCommand (65ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Executed DbCommand (39ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+AuthenticationScheme: Identity.Application signed in.
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action IdentityTask.Controllers.AccountController.Token (IdentityTask) in 8281.8494ms
+Request finished in 8422.7043ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:58914/api/info  
+AuthenticationScheme: Identity.Application was successfully authenticated.
+Authorization was successful for user: Denchik1234@gmail.com.
+Executing action method IdentityTask.Controllers.InfoController.Get (IdentityTask) with arguments ((null)) - ModelState is Valid
+Entity Framework Core 2.0.1-rtm-125 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (37ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Age], [u].[ConcurrencyStamp], [u].[Country], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action IdentityTask.Controllers.InfoController.Get (IdentityTask) in 104.6354ms
+Request finished in 122.3421ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 POST http://localhost:58914/api/account/token application/x-www-form-urlencoded; charset=UTF-8 68
+AuthenticationScheme: Identity.Application was successfully authenticated.
+Executing action method IdentityTask.Controllers.AccountController.Token (IdentityTask) with arguments (IdentityTask.Models.LoginModel) - ModelState is Valid
+Entity Framework Core 2.0.1-rtm-125 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (50ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Age], [u].[ConcurrencyStamp], [u].[Country], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+Executed DbCommand (48ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Age], [u].[ConcurrencyStamp], [u].[Country], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+Executed DbCommand (58ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Executed DbCommand (32ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+AuthenticationScheme: Identity.Application signed in.
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action IdentityTask.Controllers.AccountController.Token (IdentityTask) in 277.3151ms
+Request finished in 292.015ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:58914/api/info  
+AuthenticationScheme: Identity.Application was successfully authenticated.
+Authorization was successful for user: Denchik1234@gmail.com.
+Executing action method IdentityTask.Controllers.InfoController.Get (IdentityTask) with arguments ((null)) - ModelState is Valid
+Entity Framework Core 2.0.1-rtm-125 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (102ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Age], [u].[ConcurrencyStamp], [u].[Country], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action IdentityTask.Controllers.InfoController.Get (IdentityTask) in 217.2817ms
+Request finished in 271.3112ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:58914/index.html  
+The file /index.html was not modified
+Request finished in 7.2831ms 304 text/html
+Request starting HTTP/1.1 GET http://localhost:58914/api/info  
+AuthenticationScheme: Identity.Application was successfully authenticated.
+Authorization was successful for user: Denchik1234@gmail.com.
+Executing action method IdentityTask.Controllers.InfoController.Get (IdentityTask) with arguments ((null)) - ModelState is Valid
+Entity Framework Core 2.0.1-rtm-125 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (40ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Age], [u].[ConcurrencyStamp], [u].[Country], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action IdentityTask.Controllers.InfoController.Get (IdentityTask) in 88.3719ms
+Request finished in 192.2318ms 200 text/plain; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:58914/index.html  
+The file /index.html was not modified
+Request finished in 28.8452ms 304 text/html
+Request starting HTTP/1.1 POST http://localhost:58914/api/account/token application/x-www-form-urlencoded; charset=UTF-8 68
+AuthenticationScheme: Identity.Application was successfully authenticated.
+Executing action method IdentityTask.Controllers.AccountController.Token (IdentityTask) with arguments (IdentityTask.Models.LoginModel) - ModelState is Valid
+Entity Framework Core 2.0.1-rtm-125 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (48ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Age], [u].[ConcurrencyStamp], [u].[Country], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+Executed DbCommand (42ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Age], [u].[ConcurrencyStamp], [u].[Country], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+Executed DbCommand (50ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+Executed DbCommand (81ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+AuthenticationScheme: Identity.Application signed in.
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action IdentityTask.Controllers.AccountController.Token (IdentityTask) in 366.025ms
+Request finished in 441.9424ms 200 application/json; charset=utf-8
+Request starting HTTP/1.1 GET http://localhost:58914/api/info  
+AuthenticationScheme: Identity.Application was successfully authenticated.
+Authorization was successful for user: Denchik1234@gmail.com.
+Executing action method IdentityTask.Controllers.InfoController.Get (IdentityTask) with arguments ((null)) - ModelState is Valid
+Entity Framework Core 2.0.1-rtm-125 initialized 'ApplicationContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+Executed DbCommand (109ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Age], [u].[ConcurrencyStamp], [u].[Country], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0
+Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+Executed action IdentityTask.Controllers.InfoController.Get (IdentityTask) in 241.8217ms
+Request finished in 259.4506ms 200 text/plain; charset=utf-8
