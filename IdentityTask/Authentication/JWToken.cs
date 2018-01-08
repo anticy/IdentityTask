@@ -34,7 +34,6 @@ namespace IdentityTask.Authentication
             var claims = new List<Claim>
             {
                 new Claim(ClaimsIdentity.DefaultNameClaimType, user.Email),
-                //new Claim(JwtRegisteredClaimNames.Sub, "")
             };
             var claimsIdentity =
                 new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType,

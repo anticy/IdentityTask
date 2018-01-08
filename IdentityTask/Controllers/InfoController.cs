@@ -18,7 +18,7 @@ namespace IdentityTask.Controllers
         /// Method returns info about user. Only for Authorize users
         /// </summary>
         /// <returns></returns>
-        // GET api/values
+        // GET api/info
         [Authorize]
         [HttpGet]
         public async Task<IActionResult> Get()
