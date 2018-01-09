@@ -8,4 +8,4 @@ Test server that has a REST API for:
 4. Receiving user information if authenticated
 .NET Core
 
-/index.html => this page show how does it work.
+/index.html => this page shows how does it work.
